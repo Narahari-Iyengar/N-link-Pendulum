@@ -10,11 +10,21 @@ All the forces acting in this system are conservative forces. Friction between t
 3. Lagrange equations
 
 System Parameters
-• Length of link
-• Mass of link
-• Position of Centre of Mass(CoM) of link
-• Moment of Inertia(I) of link
-• Acceleration due to gravity
-• Angle of link (Initial)
-• Angular velocity of link (Initial)
+
+    • Length of link
+
+    • Mass of link
+
+    • Position of Centre of Mass(CoM) of link
+
+    • Moment of Inertia(I) of link
+
+    • Acceleration due to gravity
+
+    • Angle of link (Initial)
+
+    • Angular velocity of link (Initial)
+
 Using this information available, the equations of motion for the n-link pendulum is derived using all of the above methods.
+
+The equations obtained are the second order differentials of the orientation of the link i.e. the angular acceleration of the link. The equations are then fed into ODE45 in MATLAB to obtain the angle and angular velocities of the links. Using this information, the motion of the n-link pendulum is simulated.
