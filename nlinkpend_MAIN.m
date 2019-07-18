@@ -1,7 +1,7 @@
 
-%Main file for final project: n-link pendulum
-%Narahari S Iyengar - nsi7
-%MAE 5730 - Intermediate Dynamics
+%Main file for n-link pendulum
+%Narahari S Iyengar 
+
 tic
 clear all;
 clc;
@@ -84,6 +84,8 @@ if saved_animations=='N'
         f=@(t,z)nlinkpend_DAE_rhsfile(t,z,p);
         [tarray, zarray] = ode45(f,tspan, z0,options);
     end
+    
+    %Pack the variables
     for i=1:n
         d(i)=p.d(i);
         m(i)=p.m(i);
@@ -132,10 +134,10 @@ if saved_animations=='N'
         ylabel('y-axis');
         title(str);
         pause(.01)
-        %         movie_DAE_4link(i)=getframe;
+        %         movie_DAE_4link(i)=getframe; %Record plot an animation
         shg
     end
-    %      save movie_DAE_4link;
+    %      save movie_DAE_4link; %Save animation
     
     %Tracking the end point of the link
     linkend_legend=[1:n];
