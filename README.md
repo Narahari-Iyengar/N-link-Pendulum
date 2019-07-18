@@ -27,6 +27,6 @@ System Parameters
 
     • Angular velocity of link (Initial)
 
-Using this information available, the equations of motion for the n-link pendulum is derived using all of the above methods.
+With this information, the equations of motion for the n-link pendulum is derived using all of the above methods.
 
-The equations obtained are the second order differentials of the orientation of the link i.e. the angular acceleration of the link. The equations are then fed into ODE45 in MATLAB to obtain the angle and angular velocities of the links. Using this information, the motion of the n-link pendulum is simulated.
+The equations obtained are the second order differentials of the orientation of the link i.e. the angular acceleration of the link. The equations are then fed into ODE45 in MATLAB to obtain the angles and angular velocities of the links. The motion of the n-link pendulum is then simulated.
