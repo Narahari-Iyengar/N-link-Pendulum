@@ -30,3 +30,20 @@ System Parameters
 With this information, the equations of motion for the n-link pendulum is derived using all of the above methods.
 
 The equations obtained are the second order differentials of the orientation of the link i.e. the angular acceleration of the link. The equations are then fed into ODE45 in MATLAB to obtain the angles and angular velocities of the links. The motion of the n-link pendulum is then simulated.
+
+FILE DESCRIPTIONS:
+1. **nlinkpend_MAIN.m**
+       
+        Main file that is executed. Run the file and follow the instructons that appear in the command window.
+2. **nlinkpend_Euler_derivation.m**
+        
+        Contains the equations of motion derived using Euler's method
+3. **nlinkpend_Lagrange_derivation.m**
+       
+       Contains the equations of motion derived using Lagrange's method
+4. **nlinkpend_DAE_derivation.m**
+      
+        Contains the equations of motion derived using the method of DAEs (Differential Algebraic Equations)
+5. **nlinkpend_Euler_rhsfile.m , nlinkpend_Lagrange_rhsfile.m, nlinkpend_DAE_rhsfile.m**
+        
+        Contains the execution of ODE45. Returns velocity and angular acceleration of links
