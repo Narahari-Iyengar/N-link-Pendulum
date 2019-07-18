@@ -34,7 +34,7 @@ The equations obtained are the second order differentials of the orientation of 
 FILE DESCRIPTIONS:
 1. **nlinkpend_MAIN.m**
        
-        Main file that is executed. Run the file and follow the instructons that appear in the command window.
+        Main file that is executed. Run the file and follow instructions that appear in the command window.
 2. **nlinkpend_Euler_derivation.m**
         
         Contains the equations of motion derived using Euler's method
