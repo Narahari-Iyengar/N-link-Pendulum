@@ -20,13 +20,13 @@ if saved_animations=='N'
     user_input=input('Do you want to specify the properties of the pendulum?\n 1.(Y)es \n 2.(N)o: ','s');
     
     if user_input=='N'
-        for i=1:n
-            p.d(i)=0.5;
-            p.m(i)=1;
-            p.I(i)=0.2;
-            p.g=1;
-            p.th(i)=pi/2;
-            p.thd(i)=0;
+        for i=1:n %number of links
+            p.d(i)=0.5; %Dist of CG from hinge
+            p.m(i)=1; %Mass
+            p.I(i)=0.2; %Moment of Inertia
+            p.g=1; %Acceleration due to gravity
+            p.th(i)=pi/2; %Intial angle (orientation - fixed frame)
+            p.thd(i)=0; %Intial velocity
         end
         
         for i=1:n-1
