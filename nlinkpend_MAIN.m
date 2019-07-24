@@ -154,7 +154,6 @@ xlabel('Time');
 ylabel('Theta(i)');
 legend(strcat('link ',num2str(theta_legend')));
 title('Angle of links v/s time');
-end
     
 %     ENERGY CONSERVATION CHECK
 
